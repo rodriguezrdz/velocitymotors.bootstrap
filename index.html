@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Motors - Catálogo de Carros</title>
+
+    <!-- SEM Bootstrap — apenas CSS próprio com Media Queries -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+
+            <a href="index.html" class="navbar-logo">&#9965; Velocity Motors</a>
+
+            <!-- Botão hambúrguer para mobile -->
+            <button class="btn-menu" onclick="toggleMenu()">&#9776;</button>
+
+            <!-- Links de navegação -->
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#veiculos">Veículos</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- FIM DA NAVBAR -->
+
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-inner">
+            <h1>Os carros mais <span class="destaque">desejados</span> do mundo em um único lugar</h1>
+            <p>Performance, luxo e exclusividade.</p>
+            <a href="#veiculos" class="btn-vermelho">Explorar Veículos</a>
+        </div>
+    </section>
+    <!-- FIM DO HERO -->
+
+
+    <!-- VEÍCULOS -->
+    <section id="veiculos">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+            <h2 class="titulo-secao">Nossos Veículos</h2>
+            <div class="linha-vermelha"></div>
+
+            <!-- Grid preenchido pelo JavaScript -->
+            <!-- Desktop: 3 colunas | Tablet: 2 colunas | Mobile: 1 coluna -->
+            <div class="grid-carros" id="grid-carros"></div>
+        </div>
+    </section>
+    <!-- FIM DOS VEÍCULOS -->
+
+
+    <!-- DEPOIMENTOS -->
+    <section id="clientes" style="background-color: #1b1b1b; padding: 60px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="titulo-secao">Depoimentos</h2>
+            <div class="linha-vermelha"></div>
+
+            <div class="grid-depoimentos">
+
+                <div class="card-depo">
+                    <p class="estrelas">★★★★★</p>
+                    <p class="depo-texto">"Atendimento incrível, comprei meu Lamborghini aqui e não me arrependo!"</p>
+                    <p class="depo-nome">— Carlos Henrique</p>
+                </div>
+
+                <div class="card-depo">
+                    <p class="estrelas">★★★★★</p>
+                    <p class="depo-texto">"Processo de compra muito fácil e rápido. A Ferrari chegou impecável!"</p>
+                    <p class="depo-nome">— Fernanda Oliveira</p>
+                </div>
+
+                <div class="card-depo">
+                    <p class="estrelas">★★★★★</p>
+                    <p class="depo-texto">"Já comprei dois carros aqui. O catálogo é ótimo e os preços são justos."</p>
+                    <p class="depo-nome">— Ricardo Martins</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FIM DOS DEPOIMENTOS -->
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Velocity Motors &copy; 2026 &mdash; Todos os direitos reservados</p>
+        <div class="social-links">
+            <a href="#">&#128247; Instagram</a>
+            <a href="#">&#128196; Facebook</a>
+            <a href="#">&#9654; YouTube</a>
+            <a href="#">&#128222; WhatsApp</a>
+        </div>
+    </footer>
+    <!-- FIM DO RODAPÉ -->
+
+
+    <!-- Script do catálogo (sem Bootstrap JS) -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
