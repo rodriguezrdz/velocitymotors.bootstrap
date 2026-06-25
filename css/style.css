@@ -1,0 +1,463 @@
+/* =============================================
+   VELOCITY MOTORS — style.css
+   Responsividade com Media Queries (sem Bootstrap)
+   ============================================= */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+    background-color: #1b1b1b;
+    border-bottom: 2px solid #ff2d2d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #ff2d2d;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.navbar-links a:hover {
+    color: #ff2d2d;
+}
+
+/* Botão hambúrguer (aparece só no mobile) */
+.btn-menu {
+    display: none;
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Menu mobile aberto */
+.navbar-links.aberto {
+    display: flex;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+    background-color: #1b1b1b;
+    border-bottom: 3px solid #ff2d2d;
+    padding: 80px 20px 60px 20px;
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    max-width: 650px;
+}
+
+.hero p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.destaque {
+    color: #ff2d2d;
+}
+
+.btn-vermelho {
+    display: inline-block;
+    background-color: #ff2d2d;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-vermelho:hover {
+    background-color: #cc0000;
+}
+
+/* =============================================
+   SEÇÃO DE VEÍCULOS
+   ============================================= */
+#veiculos {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.linha-vermelha {
+    width: 50px;
+    height: 3px;
+    background-color: #ff2d2d;
+    margin-bottom: 40px;
+}
+
+/* Grid de cards — 3 colunas no desktop */
+.grid-carros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card individual */
+.card {
+    background-color: #1b1b1b;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff2d2d;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-corpo {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-texto {
+    color: #aaaaaa;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.card-preco {
+    color: #ff2d2d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.card .btn-vermelho {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* =============================================
+   RODAPÉ
+   ============================================= */
+footer {
+    background-color: #1b1b1b;
+    border-top: 2px solid #ff2d2d;
+    padding: 25px 20px;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+.social-links a {
+    color: #aaaaaa;
+}
+
+.social-links a:hover {
+    color: #ff2d2d;
+}
+
+/* =============================================
+   PÁGINA SELECIONADO.HTML
+   ============================================= */
+.pagina-detalhe {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #ff2d2d;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn-voltar:hover {
+    background-color: #cc0000;
+}
+
+/* Layout do detalhe: imagem + info lado a lado */
+.detalhe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.detalhe-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333333;
+}
+
+.detalhe-nome {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff2d2d;
+    margin-bottom: 5px;
+}
+
+.detalhe-valor {
+    font-size: 1.3rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.detalhe-descricao {
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.detalhe-descricao hr {
+    border-color: #333;
+    margin: 15px 0;
+}
+
+.specs-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.spec-item {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.spec-item span {
+    color: #ff2d2d;
+    font-weight: bold;
+}
+
+/* =============================================
+   MEDIA QUERIES — RESPONSIVIDADE
+   ============================================= */
+
+/* TABLET: telas até 992px — 2 cards por linha */
+@media (max-width: 992px) {
+
+    .grid-carros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .detalhe-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE: telas até 576px — 1 card por linha */
+@media (max-width: 576px) {
+
+    /* Navbar mobile */
+    .btn-menu {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background-color: #1b1b1b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+    }
+
+    .navbar-links li a {
+        display: block;
+        padding: 12px 20px;
+    }
+
+    .navbar-inner {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    /* Hero mobile */
+    .hero {
+        padding: 50px 20px 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Grid mobile */
+    .grid-carros {
+        grid-template-columns: 1fr;
+    }
+
+    /* Detalhe mobile */
+    .detalhe-nome {
+        font-size: 1.5rem;
+    }
+
+    .detalhe-valor {
+        font-size: 1.1rem;
+    }
+}
+
+/* =============================================
+   DEPOIMENTOS
+   ============================================= */
+.grid-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-depo {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.estrelas {
+    color: #ffc107;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.depo-texto {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.depo-nome {
+    color: #ff2d2d;
+    font-weight: bold;
+}
+
+/* Tablet: 2 colunas */
+@media (max-width: 992px) {
+    .grid-depoimentos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 coluna */
+@media (max-width: 576px) {
+    .grid-depoimentos {
+        grid-template-columns: 1fr;
+    }
+}
